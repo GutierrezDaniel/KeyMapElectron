@@ -1,11 +1,17 @@
-/* eslint-disable */
-import { setlogin, setlogout } from '../../../state/loginSlice';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import { LoginBackground, LoginContainer, LoginTitle, Background, CardContainer, CardLayout } from './Login.styled';
+import {
+  LoginBackground,
+  LoginContainer,
+  LoginTitle,
+  Background,
+  CardContainer,
+  CardLayout,
+} from './Login.styled';
+
+import { setlogin } from '../../../state/loginSlice';
 
 const Login = () => {
   const { login } = useSelector((state) => state.login);
